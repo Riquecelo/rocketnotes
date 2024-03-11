@@ -27,7 +27,7 @@ export function SignIn(){
 
                 <Button title="Entrar" />
 
-            <Link to="regiter">
+            <Link to="register">
                 Criar conta
             </Link>
 
