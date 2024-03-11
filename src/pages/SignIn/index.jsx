@@ -13,13 +13,13 @@ export function SignIn(){
                 <h2>Faça seu login</h2>
 
                 <Input
-                    placerolder="Email"
+                    placeholder="Email"
                     type="text"
                     icon={FiMail}
                 />
 
                 <Input 
-                    placerolder="Senha"
+                    placeholder="Senha"
                     type="password"
                     icon={FiLock}
                 />

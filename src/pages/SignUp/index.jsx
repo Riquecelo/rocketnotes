@@ -14,19 +14,19 @@ export function SignUp(){
                 <h2>Crie sua Conta</h2>
 
                 <Input
-                    placerolder="Nome"
+                    placeholder="Nome"
                     type="text"
                     icon={FiUser}
                 />
 
                 <Input
-                    placerolder="Email"
+                    placeholder="Email"
                     type="text"
                     icon={FiMail}
                 />
 
                 <Input 
-                    placerolder="Senha"
+                    placeholder="Senha"
                     type="password"
                     icon={FiLock}
                 />

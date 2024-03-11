@@ -1,5 +1,5 @@
-import { Container, Form } from './styles';
-import { FiArrowLeft,FiUser, FiMail, FiLock } from 'react-icons/fi';
+import { Container, Form, Avatar } from './styles';
+import { FiArrowLeft,FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
@@ -11,31 +11,42 @@ export function Profile(){
             </header>
 
             <Form>
+                <Avatar>
+                    <img 
+                        src="https://github.com/Riquecelo.png" 
+                        alt="Imagem do usuário" 
+                    />
 
-            <Input 
-                placerolder="Nome"
-                type="password"
-                icon={FiUser}
-            />
-            <Input 
-                placerolder="Email"
-                type="email"
-                icon={FiMail}
-            />
+                    <label htmlFor="avatar">
+                        <FiCamera/>
+                    </label>
+                    <input id='avatar' type="file" />
+                </Avatar>
 
-            <Input 
-                placerolder="Senha atual"
-                type="password"
-                icon={FiLock}
-            />
+                <Input 
+                    placeholder="Nome"
+                    type="text"
+                    icon={FiUser}
+                />
+                <Input 
+                    placeholder="Email"
+                    type="email"
+                    icon={FiMail}
+                />
 
-            <Input 
-                placerolder="Nova senha"
-                type="password"
-                icon={FiLock}
-            />
+                <Input 
+                    placeholder="Senha atual"
+                    type="password"
+                    icon={FiLock}
+                />
 
-            <Button title="Salvar"/>
+                <Input 
+                    placeholder="Nova senha"
+                    type="password"
+                    icon={FiLock}
+                />
+
+                <Button title="Salvar"/>
             </Form>
         </Container>
     )
