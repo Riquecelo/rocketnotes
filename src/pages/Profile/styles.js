@@ -15,9 +15,12 @@ export const Container = styled.div`
 
         padding: 0 124px;
 
-        > svg{
-            color: ${({theme}) => theme.COLORS.GRAY_100};
-            font-size: 24px;
+        > a{
+            > svg{
+                color: ${({theme}) => theme.COLORS.GRAY_100};
+                font-size: 24px;
+            }
+
         }
     }
 `;
